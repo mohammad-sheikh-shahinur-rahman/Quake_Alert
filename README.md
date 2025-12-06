@@ -53,8 +53,8 @@ Quake Alert provides timely and accurate information about recent earthquakes, h
 
 1.  **Clone the repository:**
     ```sh
-    git clone https://github.com/your-username/quake_alert.git
-    cd quake_alert
+    git clone https://github.com/mohammad-sheikh-shahinur-rahman/Quake_Alert.git
+    cd Quake_Alert
     ```
 
 2.  **Install dependencies:**
