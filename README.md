@@ -1,53 +1,69 @@
-# Quake Alert - ভূমিকম্প অ্যালার্ট
+# 🌍 Quake Alert — ভূমিকম্প অ্যালার্ট  
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Repo-181717?logo=github&logoColor=white)](https://github.com/mohammad-sheikh-shahinur-rahman/Quake_Alert)
+[![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?logo=flutter&logoColor=white)](https://flutter.dev)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-**A real-time earthquake alert application for Bangladesh and surrounding regions, with a user-friendly interface and critical safety features. Built with Flutter.**
+> A **real-time earthquake alert application** for Bangladesh & surrounding regions — with safety, multilingual support, and critical emergency tools. Built with ❤️ in Flutter.
 
-![Quake Alert App Banner](https://shahinurrahman.com/wp-content/uploads/2024/07/Quake-Alert-App-Banner.png)
+![Quake Alert Banner](https://github.com/mohammad-sheikh-shahinur-rahman/Quake_Alert/blob/main/Screenshot%202025-12-06%20153503.png?raw=true)
 
 ---
 
 ## 🌟 About the App
 
-Quake Alert provides timely and accurate information about recent earthquakes, helping users stay informed and safe. The app features an interactive map, customizable alerts, and a wealth of safety information, all available in both English and Bengali.
+**Quake Alert** delivers timely, accurate earthquake data from USGS, empowering users in high-risk seismic zones with actionable insights. Designed for accessibility and urgency, it features:
+- ✅ Real-time alerts
+- 🗺️ Interactive map with custom zones
+- 🚨 Emergency siren + vibration
+- 📚 Safety guides & emergency kit planner
+- 🌐 **Fully bilingual: English & Bengali (বাংলা)**
+
+---
 
 ## ✨ Key Features
 
-- **Interactive Map:** Visualize recent earthquakes on a dynamic map. See your current location, custom alert zones, and tectonic plate boundaries.
-- **Real-time Alerts:** Receive push notifications for significant earthquakes occurring within your predefined alert zones.
-- **Customizable Alert Zones:** Create, edit, and delete circular zones on the map to monitor specific areas of interest.
-- **Detailed Quake Info:** Tap on an earthquake to view detailed information, including magnitude, depth, time, and a link to the USGS event page.
-- **Comprehensive Quake List:** Browse a list of recent earthquakes. Sort by time or magnitude, and filter by date range and event type.
-- **Global Search:** Instantly find any earthquake by searching for its location from anywhere in the app.
-- **Emergency Siren:** Activate a loud siren with a flashing screen and device vibration to attract attention in an emergency. Includes quick access to emergency contact numbers.
-- **Safety & Preparedness:**
-    - **Safety Screen:** Access crucial safety tips for before, during, and after an earthquake.
-    - **Emergency Kit:** An interactive checklist to help you prepare your emergency survival kit.
-- **Multi-Language Support:** Fully localized in both **English** and **Bengali**.
-- **User-Friendly Settings:**
-    - Adjust the alert magnitude threshold.
-    - Set the automatic data refresh interval.
-    - Toggle the visibility of tectonic plates.
-    - Reset the map view to its default position.
+| Feature | Description |
+|--------|-------------|
+| 🗺️ **Interactive Map** | Powered by `flutter_map` & `latlong2` — shows quakes, your location, tectonic plates, and user-defined alert zones |
+| 🔔 **Smart Alerts** | Push notifications for quakes ≥ threshold magnitude *inside your custom zones* |
+| 🎯 **Custom Zones** | Draw, edit, and delete circular monitoring zones (persisted via `shared_preferences`) |
+| 📋 **Quake Details** | Tap any quake for: magnitude, depth, time, USGS link (`url_launcher`) |
+| 📜 **Filterable List** | Sort (time/mag), filter (date/event type), and search globally |
+| 🚨 **Emergency Siren** | Full-screen flashing siren + device vibration (`audioplayers` + `vibration`) + emergency contacts |
+| 🧰 **Safety Hub** | Before/During/After tips & interactive emergency kit checklist |
+| ⚙️ **Smart Settings** | Adjust magnitude threshold, refresh interval, plate visibility, map reset |
 
-## 🛠️ Technologies & Packages Used
+---
 
-- **Framework:** [Flutter](https://flutter.dev/)
-- **State Management:** `setState`
-- **Mapping:** [`flutter_map`](https://pub.dev/packages/flutter_map), [`latlong2`](https://pub.dev/packages/latlong2)
-- **Networking:** [`http`](https://pub.dev/packages/http)
-- **Localization:** [`easy_localization`](https://pub.dev/packages/easy_localization)
-- **Notifications:** [`flutter_local_notifications`](https://pub.dev/packages/flutter_local_notifications)
-- **Device Features:** [`geolocator`](https://pub.dev/packages/geolocator), [`vibration`](https://pub.dev/packages/vibration), [`audioplayers`](https://pub.dev/packages/audioplayers)
-- **Storage:** [`shared_preferences`](https://pub.dev/packages/shared_preferences)
-- **UI:** [`curved_navigation_bar`](https://pub.dev/packages/curved_navigation_bar)
-- **Utilities:** [`url_launcher`](https://pub.dev/packages/url_launcher), [`share_plus`](https://pub.dev/packages/share_plus), [`package_info_plus`](https://pub.dev/packages/package_info_plus)
+## 🛠️ Tech Stack
+
+| Category | Packages |
+|---------|----------|
+| **Core** | `Flutter SDK ≥3.22`, `setState` |
+| **Localization** | [`easy_localization`](https://pub.dev/packages/easy_localization) (en/bn) |
+| **Notifications** | [`flutter_local_notifications`](https://pub.dev/packages/flutter_local_notifications) |
+| **Mapping & Geo** | [`flutter_map`](https://pub.dev/packages/flutter_map), [`latlong2`](https://pub.dev/packages/latlong2), [`geolocator`](https://pub.dev/packages/geolocator) |
+| **Media & Haptics** | [`audioplayers`](https://pub.dev/packages/audioplayers), [`vibration`](https://pub.dev/packages/vibration) |
+| **Data & Storage** | [`http`](https://pub.dev/packages/http), [`shared_preferences`](https://pub.dev/packages/shared_preferences) |
+| **UI/UX** | [`curved_navigation_bar`](https://pub.dev/packages/curved_navigation_bar), [`url_launcher`](https://pub.dev/packages/url_launcher), [`share_plus`](https://pub.dev/packages/share_plus), [`package_info_plus`](https://pub.dev/packages/package_info_plus) |
+
+---
+
+## 🖼️ Screenshots
+
+| Home (Map) | Quake List | Settings & Safety |
+|:---:|:---:|:---:|
+| ![Home](https://github.com/mohammad-sheikh-shahinur-rahman/Quake_Alert/blob/main/Screenshot%202025-12-06%20153358.png?raw=true) | ![List](https://github.com/mohammad-sheikh-shahinur-rahman/Quake_Alert/blob/main/Screenshot%202025-12-06%20153437.png?raw=true) | ![Safety](https://github.com/mohammad-sheikh-shahinur-rahman/Quake_Alert/blob/main/Screenshot%202025-12-06%20153503.png?raw=true) |
+
+> 📸 *All screenshots from live Android build (v1.0.0)*
+
+---
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-
-- Flutter SDK: Make sure you have the Flutter SDK installed. For installation instructions, see the [official Flutter documentation](https://flutter.dev/docs/get-started/install).
-- An editor like Android Studio or VS Code with the Flutter plugin.
+- Flutter SDK (≥3.22) — [Install Guide](https://flutter.dev/docs/get-started/install)
+- Android Studio / VS Code + Flutter plugin
 
 ### Installation & Setup
 
@@ -66,16 +82,7 @@ Quake Alert provides timely and accurate information about recent earthquakes, h
     ```sh
     flutter run
     ```
-
-## 🖼️ Screenshots
-
-*(Add your app screenshots here to showcase the UI)*
-
-| Home Screen | Quake List | Settings |
-| :---: | :---: | :---: |
-| *Screenshot 1* | *Screenshot 2* | *Screenshot 3* |
-
-## 🤝 Contributing
+  ## 🤝 Contributing
 
 Contributions are welcome! If you have ideas for new features or find any bugs, feel free to open an issue or submit a pull request.
 
@@ -85,10 +92,33 @@ Contributions are welcome! If you have ideas for new features or find any bugs, 
 4.  Push to the Branch (`git push origin feature/AmazingFeature`)
 5.  Open a Pull Request
 
-## 📄 License
+## 📄 License  
 
-This project is licensed under the MIT License - see the `LICENSE` file for details.
+**MIT License**
+
+Copyright © 2025 **Mohammad Sheikh Shahinur Rahman**
+
+Permission is hereby granted, free of charge, to any person obtaining a copy  
+of this software and associated documentation files (the "Software"), to deal  
+in the Software without restriction, including without limitation the rights  
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell  
+copies of the Software, and to permit persons to whom the Software is  
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all  
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR  
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,  
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE  
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER  
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,  
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE  
+SOFTWARE.
 
 ---
 *Developed by Mohammad Sheikh Shahinur Rahman*
 [shahinurrahman.com](https://shahinurrahman.com/)
+  
+
+    
