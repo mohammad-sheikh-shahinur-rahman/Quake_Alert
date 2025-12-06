@@ -1,0 +1,20 @@
+{
+  "app_name": "Earthquake Alert",
+  "home": "Home",
+  "alerts": "Alerts",
+  "recent": "Recent",
+  "settings": "Settings",
+  "loading": "Loading...",
+  "no_quakes": "No earthquakes recorded",
+  "magnitude": "Magnitude",
+  "depth": "Depth",
+  "location": "Location",
+  "time": "Time",
+  "km": "km",
+  "recent_quakes": "Recent Earthquakes",
+  "alert_threshold": "Alert Threshold",
+  "notify_above": "Notify for magnitude {mag}+",
+  "language": "Language",
+  "bangla": "Bangla",
+  "english": "English"
+}

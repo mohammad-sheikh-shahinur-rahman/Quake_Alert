@@ -1,0 +1,76 @@
+name: quake_alert
+description: "ভূমিকম্প রিয়েল-time অ্যালার্ট অ্যাপ — বাংলায়"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # Core packages
+  http: ^1.2.2
+  flutter_map: ^8.2.2
+  latlong2: ^0.9.1
+  curved_navigation_bar: ^1.0.3
+  easy_localization: ^3.0.8 # Updated to ^3.0.8 as suggested
+  flutter_local_notifications: ^17.2.4
+  intl: ^0.20.2
+  path_provider: ^2.1.5
+  url_launcher: ^6.3.0
+  share_plus: ^12.0.1
+  audioplayers: ^6.5.1
+  shared_preferences: ^2.5.3
+  uuid: ^4.4.0
+  geolocator: ^12.0.0
+  package_info_plus: ^9.0.0
+  vibration: ^3.1.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/translations/
+    - assets/fonts/
+    - assets/audio/
+    - assets/tectonic_plates.geojson
+    - assets/icon/ # Ensure this line is present for the new icon
+
+  fonts:
+    - family: SolaimanLipi
+      fonts:
+        - asset: assets/fonts/SolaimanLipi.ttf
+    - family: Kalpurush
+      fonts:
+        - asset: assets/fonts/Kalpurush.ttf
+
+# Configuration for flutter_launcher_icons
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/icon.jpg" # Changed to icon.jpg
+  min_sdk_android: 21
+  web:
+    generate: true
+    image_path: "assets/icon/icon.jpg" # Changed to icon.jpg
+    background_color: "#FFFFFF"
+    theme_color: "#FFFFFF"
+  windows:
+    generate: true
+    image_path: "assets/icon/icon.jpg" # Changed to icon.jpg
+    icon_size: 48
+  macos:
+    generate: true
+    image_path: "assets/icon/icon.jpg" # Changed to icon.jpg
+  linux:
+    generate: true
+    image_path: "assets/icon/icon.jpg" # Changed to icon.jpg
